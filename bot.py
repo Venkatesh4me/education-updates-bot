@@ -1,12 +1,13 @@
 import json
+import time
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from parsers.generic import GenericParser
 from services.downloader import Downloader
 from services.storage import Storage
 from services.telegram import Telegram
 from services.logger import logger
-from utils.hashing import generate_hash
+from services.site_checker import SiteChecker
 
 
 class EducationBot:
@@ -15,93 +16,77 @@ class EducationBot:
 
         base = Path(__file__).parent
 
-        with open(base / "config/sites.json", encoding="utf-8") as f:
+        with open(base / "config/sites.json", "r", encoding="utf-8") as f:
             self.sites = json.load(f)
 
-        with open(base / "config/keywords.json", encoding="utf-8") as f:
-            self.keywords = json.load(f)
-
         self.downloader = Downloader()
-        self.parser = GenericParser(self.keywords)
         self.storage = Storage()
         self.telegram = Telegram()
 
+        self.site_checker = SiteChecker(
+            self.downloader,
+            self.storage,
+            self.telegram,
+            logger
+        )
+
     def run(self):
 
-        logger.info("=" * 60)
+        logger.info("=" * 70)
         logger.info("Education Updates Bot Started")
-        logger.info("=" * 60)
+        logger.info("=" * 70)
+        start_time = time.perf_counter()
 
         total_new = 0
         total_old = 0
 
-        for site in self.sites:
+        enabled_sites = [
+            site
+            for site in self.sites
+            if site.get("enabled", True)
+        ]
 
-            logger.info(f"Checking {site['name']}")
+        with ThreadPoolExecutor(max_workers=5) as executor:
 
-            result = self.downloader.fetch(site["url"])
+            futures = {
+                executor.submit(
+                    self.site_checker.check,
+                    site
+                ): site
+                for site in enabled_sites
+            }
 
-            if not result["success"]:
-                logger.error(result["error"])
-                continue
+            for future in as_completed(futures):
 
-            logger.success(
-                f"Downloaded successfully (HTTP {result['status']})"
-            )
+                site = futures[future]
 
-            articles = self.parser.parse(
-                result["html"],
-                site["url"]
-            )
+                try:
 
-            logger.info(f"Found {len(articles)} matching articles")
+                    result = future.result()
 
-            new_count = 0
-            old_count = 0
+                    logger.success(f"{site['name']} Completed")
 
-            for article in articles:
-
-                article_hash = generate_hash(
-                    article["title"],
-                    article["url"]
-                )
-
-                if self.storage.exists(article_hash):
-
-                    old_count += 1
-
-                else:
-
-                    new_count += 1
-                    total_new += 1
-
-                    self.storage.add(
-                        article_hash,
-                        article
+                    logger.info(
+                        f"{site['name']} -> New : {result['new']}"
                     )
 
-                    logger.success(
-                        f"New Article: {article['title']}"
+                    logger.info(
+                        f"{site['name']} -> Old : {result['old']}"
                     )
 
-                    sent = self.telegram.send(
-                        article["title"],
-                        article["url"],
-                        site["name"]
+                    total_new += result["new"]
+                    total_old += result["old"]
+
+                except Exception as e:
+
+                    logger.exception(
+                        f"{site['name']} failed : {e}"
                     )
+        elapsed = time.perf_counter() - start_time
 
-                    if sent:
-                        logger.success("Telegram message sent")
-                    else:
-                        logger.error("Failed to send Telegram message")
-
-            total_old += old_count
-
-            logger.info(f"New Articles : {new_count}")
-            logger.info(f"Existing Articles : {old_count}")
-
-        logger.info("=" * 60)
+        logger.success(f"Completed in {elapsed:.2f} seconds")
+        logger.info("=" * 70)
         logger.success("Scan Completed Successfully")
         logger.info(f"Total New Articles : {total_new}")
         logger.info(f"Total Existing Articles : {total_old}")
-        logger.info("=" * 60)
+        logger.info("=" * 70)

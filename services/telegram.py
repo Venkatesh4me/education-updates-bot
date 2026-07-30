@@ -1,5 +1,7 @@
-import httpx
 import os
+from datetime import datetime
+
+import httpx
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -14,28 +16,37 @@ class Telegram:
 
     def send(self, title, url, source):
 
+        now = datetime.now().strftime("%d %b %Y %I:%M %p")
+
         message = f"""
-📢 <b>Education Update</b>
+📢 <b>NEW UPDATE</b>
 
-🏛 <b>Source:</b> {source}
+🏛 <b>Source</b>
+{source}
 
-📄 <b>Title:</b>
-{title}
+📄 <b>Title</b>
+<a href="{url}">{title}</a>
 
-🔗 {url}
+🕒 <b>Detected</b>
+{now}
 """
 
         api = f"https://api.telegram.org/bot{self.token}/sendMessage"
 
-        response = httpx.post(
-            api,
-            data={
-                "chat_id": self.chat_id,
-                "text": message,
-                "parse_mode": "HTML",
-                "disable_web_page_preview": False
-            },
-            timeout=30
-        )
+        try:
 
-        return response.status_code == 200
+            response = httpx.post(
+                api,
+                data={
+                    "chat_id": self.chat_id,
+                    "text": message,
+                    "parse_mode": "HTML",
+                    "disable_web_page_preview": False
+                },
+                timeout=30
+            )
+
+            return response.status_code == 200
+
+        except Exception:
+            return False

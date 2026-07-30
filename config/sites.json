@@ -2,6 +2,50 @@
     {
         "name": "NTA",
         "type": "generic",
-        "url": "https://nta.ac.in/"
+        "url": "https://nta.ac.in/",
+        "enabled": true,
+        "keywords": [
+            "jee",
+            "neet",
+            "notification",
+            "result",
+            "admit card",
+            "registration",
+            "answer key",
+            "schedule"
+        ]
+    },
+    {
+        "name": "YouTube Blog",
+        "type": "rss",
+        "url": "https://blog.youtube/feed/",
+        "enabled": true,
+        "keywords": []
+    },
+
+    {
+        "name": "CBSE",
+        "type": "generic",
+        "url": "https://www.cbse.gov.in/",
+        "enabled": true,
+        "keywords": [
+            "notification",
+            "result",
+            "circular",
+            "exam"
+        ]
+    },
+    {
+        "name": "JoSAA",
+        "type": "generic",
+        "url": "https://josaa.nic.in/",
+        "enabled": true,
+        "keywords": [
+            "round",
+            "seat",
+            "allotment",
+            "schedule",
+            "counselling"
+        ]
     }
 ]

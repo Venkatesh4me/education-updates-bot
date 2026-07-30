@@ -1,36 +1,40 @@
 {
     "articles": {
-        "117805913ddbad6c40c7440e6f1cdecde410e43dda28626bf44943bf3f2bf0b4": {
-            "title": "Exams",
-            "url": "https://nta.ac.in/"
+        "34c052faa0e9e3d6327d001ee42a4504ec7c77498c3dc1ee1d8f0ecfb5defa2a": {
+            "title": "परिणाम RESULTS",
+            "url": "https://results.digilocker.gov.in/"
         },
-        "d0f706e483a7fd09de75e2896b0c621ba7b38885fd8fac949f33bb9f1d3e46ab": {
-            "title": "Joint Entrance Examination",
-            "url": "https://jeemain.nta.nic.in"
-        },
-        "2cdfc1d6663c71425f09e4724ffe71072f45fb22f5ad4b171020c563230d2d62": {
-            "title": "ICAR'S All India Entrance Examination",
-            "url": "https://exams.nta.nic.in/icar/"
-        },
-        "77829f5e06b01134fb1129eb407800b9d4bf3f3b7ec14f39bb1c0850ead77cd5": {
-            "title": "Hotel Management Joint Entrance Examination",
-            "url": "https://exams.nta.nic.in/nchm-jee/"
+        "0dad32dd97a02ce19bdd2ceac16c49fff1f7018deea9fde5c5466cd6aac14001": {
+            "title": "Schedule",
+            "url": "https://josaa.nic.in/schedule/"
         },
         "9fd9c425dcb51a3fc41615ba4d672e770bf46083bc2116c330d8c2929e50039a": {
             "title": "Registration for observers of NTA is open. All eligible observer are requested to register themselves.",
             "url": "http://cbtc.nta.ac.in/observer"
         },
-        "d591096cca632bec17337485a0182a03efbc244ffd4bf270d2942c1ed9fde7f1": {
-            "title": "Engineering Joint Entrance Examination - (Main)",
-            "url": "https://nta.ac.in/Engineeringexam"
-        },
-        "c66395722aa06fe9238902205cbb2022d1b7dcf4e22789e279393d5b73910bc9": {
-            "title": "MOOCs Swayam Examination",
-            "url": "https://nta.ac.in/Swayamexam"
+        "971cae44b092f811c683617d59b6937132d7b781aa7baf14da3306c0ab8417b2": {
+            "title": "Seat Matrix",
+            "url": "https://josaa.nic.in/seat-matrix/"
         },
         "5c43ddefe93f6b6d96a014dadd08416d48a52f014786b6b0b1a18704013ba117": {
             "title": "NTA Registration and MoA",
             "url": "https://nta.ac.in/Download/NTARegistrationandMOA.pdf"
+        },
+        "670cffc06ec5833011b5797a507af06c615528b35be914673660b6efe0a4715d": {
+            "title": "JoSAA Schedule 2026",
+            "url": "https://josaa.nic.in/document/josaa-schedule-2026/"
+        },
+        "9159b64e02ccd28625e7a41fcd724e82259480c7b619ddfbf1b8f7fffc05b050": {
+            "title": "Install “ Sandes “ to get counselling related messages.",
+            "url": "https://play.google.com/store/apps/details?id=in.nic.gimkerala&hl=en_IN&gl=US"
+        },
+        "7bb82b454a3b31d1d23f451d111788aefcf2c55fabce7bedf3fbb73aceda42af": {
+            "title": "View Round 5 Seat Allocation Result for JoSAA 2026",
+            "url": "https://josaa.admissions.nic.in/applicant/root/candidatelogin.aspx"
+        },
+        "1cdfe7d0a2e056ee7d2daac91cfb64c01d3093571f244b5ae9cb63f3c6318869": {
+            "title": "NEUT-2025 Seat Allocation",
+            "url": "https://csab.nic.in/csab-neut"
         }
     }
 }
