@@ -1,0 +1,7 @@
+httpx
+beautifulsoup4
+lxml
+feedparser
+loguru
+tenacity
+python-dotenv
