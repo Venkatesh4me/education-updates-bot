@@ -12204,3 +12204,32 @@
 2026-08-21 13:52:21 | INFO    | Total New Articles : 0
 2026-08-21 13:52:21 | INFO    | Total Existing Articles : 7
 2026-08-21 13:52:21 | INFO    | ======================================================================
+2026-08-21 14:39:27 | INFO    | ======================================================================
+2026-08-21 14:39:27 | INFO    | Education Updates Bot Started
+2026-08-21 14:39:27 | INFO    | ======================================================================
+2026-08-21 14:39:27 | INFO    | Checking NTA
+2026-08-21 14:39:27 | INFO    | Checking YouTube Blog
+2026-08-21 14:39:27 | INFO    | Checking CBSE
+2026-08-21 14:39:27 | INFO    | Checking JoSAA
+2026-08-21 14:39:28 | INFO    | YouTube Blog -> Found 0 articles
+2026-08-21 14:39:28 | SUCCESS | YouTube Blog Completed
+2026-08-21 14:39:28 | INFO    | YouTube Blog -> New : 0
+2026-08-21 14:39:28 | INFO    | YouTube Blog -> Old : 0
+2026-08-21 14:39:28 | INFO    | CBSE -> Found 1 articles
+2026-08-21 14:39:28 | SUCCESS | CBSE Completed
+2026-08-21 14:39:28 | INFO    | CBSE -> New : 0
+2026-08-21 14:39:28 | INFO    | CBSE -> Old : 1
+2026-08-21 14:39:30 | INFO    | NTA -> Found 2 articles
+2026-08-21 14:39:30 | INFO    | JoSAA -> Found 6 articles
+2026-08-21 14:39:30 | SUCCESS | NTA Completed
+2026-08-21 14:39:30 | INFO    | NTA -> New : 0
+2026-08-21 14:39:30 | INFO    | NTA -> Old : 2
+2026-08-21 14:39:30 | SUCCESS | JoSAA Completed
+2026-08-21 14:39:30 | INFO    | JoSAA -> New : 0
+2026-08-21 14:39:30 | INFO    | JoSAA -> Old : 6
+2026-08-21 14:39:30 | SUCCESS | Completed in 2.22 seconds
+2026-08-21 14:39:30 | INFO    | ======================================================================
+2026-08-21 14:39:30 | SUCCESS | Scan Completed Successfully
+2026-08-21 14:39:30 | INFO    | Total New Articles : 0
+2026-08-21 14:39:30 | INFO    | Total Existing Articles : 9
+2026-08-21 14:39:30 | INFO    | ======================================================================
