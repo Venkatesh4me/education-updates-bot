@@ -13074,3 +13074,32 @@
 2026-08-22 13:36:24 | INFO    | Total New Articles : 0
 2026-08-22 13:36:24 | INFO    | Total Existing Articles : 3
 2026-08-22 13:36:24 | INFO    | ======================================================================
+2026-08-22 14:25:46 | INFO    | ======================================================================
+2026-08-22 14:25:46 | INFO    | Education Updates Bot Started
+2026-08-22 14:25:46 | INFO    | ======================================================================
+2026-08-22 14:25:46 | INFO    | Checking NTA
+2026-08-22 14:25:46 | INFO    | Checking YouTube Blog
+2026-08-22 14:25:46 | INFO    | Checking CBSE
+2026-08-22 14:25:46 | INFO    | Checking JoSAA
+2026-08-22 14:25:46 | INFO    | YouTube Blog -> Found 0 articles
+2026-08-22 14:25:46 | SUCCESS | YouTube Blog Completed
+2026-08-22 14:25:46 | INFO    | YouTube Blog -> New : 0
+2026-08-22 14:25:46 | INFO    | YouTube Blog -> Old : 0
+2026-08-22 14:25:46 | INFO    | CBSE -> Found 1 articles
+2026-08-22 14:25:46 | SUCCESS | CBSE Completed
+2026-08-22 14:25:46 | INFO    | CBSE -> New : 0
+2026-08-22 14:25:46 | INFO    | CBSE -> Old : 1
+2026-08-22 14:27:22 | ERROR   | _ssl.c:993: The handshake operation timed out
+2026-08-22 14:27:22 | SUCCESS | NTA Completed
+2026-08-22 14:27:22 | INFO    | NTA -> New : 0
+2026-08-22 14:27:22 | INFO    | NTA -> Old : 0
+2026-08-22 14:27:24 | ERROR   | _ssl.c:993: The handshake operation timed out
+2026-08-22 14:27:24 | SUCCESS | JoSAA Completed
+2026-08-22 14:27:24 | INFO    | JoSAA -> New : 0
+2026-08-22 14:27:24 | INFO    | JoSAA -> Old : 0
+2026-08-22 14:27:24 | SUCCESS | Completed in 98.34 seconds
+2026-08-22 14:27:24 | INFO    | ======================================================================
+2026-08-22 14:27:24 | SUCCESS | Scan Completed Successfully
+2026-08-22 14:27:24 | INFO    | Total New Articles : 0
+2026-08-22 14:27:24 | INFO    | Total Existing Articles : 1
+2026-08-22 14:27:24 | INFO    | ======================================================================
