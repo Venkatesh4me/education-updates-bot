@@ -35,6 +35,18 @@
         "1cdfe7d0a2e056ee7d2daac91cfb64c01d3093571f244b5ae9cb63f3c6318869": {
             "title": "NEUT-2025 Seat Allocation",
             "url": "https://csab.nic.in/csab-neut"
+        },
+        "249f7edfc6f39f26699b99293f1d7fd0d0b0fee5c1e1192bbd71e4cd2684bef1": {
+            "title": "Joint Entrance Examination (JEE)",
+            "url": "https://jeemain.nta.nic.in"
+        },
+        "23cad4427840048919a70037102c0237a182ed94ef8434722f460f8d1ae38f70": {
+            "title": "Hotel Management Joint Entrance Examination (NCHM-JEE)",
+            "url": "https://exams.nta.nic.in/nchm-jee/"
+        },
+        "076a18899cad6ae1657e6c14644c5c6ebf52c2ea321b5fe48b12815b1ebbfd4b": {
+            "title": "National Eligibility Cum Entrance Test (NEET)",
+            "url": "https://neet.nta.nic.in/"
         }
     }
 }
