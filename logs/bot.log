@@ -21426,3 +21426,32 @@
 2026-09-24 23:20:06 | INFO    | Total New Articles : 0
 2026-09-24 23:20:06 | INFO    | Total Existing Articles : 12
 2026-09-24 23:20:06 | INFO    | ======================================================================
+2026-09-25 01:46:19 | INFO    | ======================================================================
+2026-09-25 01:46:19 | INFO    | Education Updates Bot Started
+2026-09-25 01:46:19 | INFO    | ======================================================================
+2026-09-25 01:46:19 | INFO    | Checking NTA
+2026-09-25 01:46:19 | INFO    | Checking YouTube Blog
+2026-09-25 01:46:19 | INFO    | Checking CBSE
+2026-09-25 01:46:19 | INFO    | Checking JoSAA
+2026-09-25 01:46:20 | INFO    | YouTube Blog -> Found 0 articles
+2026-09-25 01:46:20 | SUCCESS | YouTube Blog Completed
+2026-09-25 01:46:20 | INFO    | YouTube Blog -> New : 0
+2026-09-25 01:46:20 | INFO    | YouTube Blog -> Old : 0
+2026-09-25 01:46:20 | INFO    | CBSE -> Found 1 articles
+2026-09-25 01:46:20 | SUCCESS | CBSE Completed
+2026-09-25 01:46:20 | INFO    | CBSE -> New : 0
+2026-09-25 01:46:20 | INFO    | CBSE -> Old : 1
+2026-09-25 01:46:51 | INFO    | NTA -> Found 5 articles
+2026-09-25 01:46:51 | SUCCESS | NTA Completed
+2026-09-25 01:46:51 | INFO    | NTA -> New : 0
+2026-09-25 01:46:51 | INFO    | NTA -> Old : 5
+2026-09-25 01:47:56 | ERROR   | _ssl.c:993: The handshake operation timed out
+2026-09-25 01:47:56 | SUCCESS | JoSAA Completed
+2026-09-25 01:47:56 | INFO    | JoSAA -> New : 0
+2026-09-25 01:47:56 | INFO    | JoSAA -> Old : 0
+2026-09-25 01:47:56 | SUCCESS | Completed in 96.88 seconds
+2026-09-25 01:47:56 | INFO    | ======================================================================
+2026-09-25 01:47:56 | SUCCESS | Scan Completed Successfully
+2026-09-25 01:47:56 | INFO    | Total New Articles : 0
+2026-09-25 01:47:56 | INFO    | Total Existing Articles : 6
+2026-09-25 01:47:56 | INFO    | ======================================================================
