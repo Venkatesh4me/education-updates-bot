@@ -24935,3 +24935,32 @@
 2026-10-19 11:06:07 | INFO    | Total New Articles : 0
 2026-10-19 11:06:07 | INFO    | Total Existing Articles : 8
 2026-10-19 11:06:07 | INFO    | ======================================================================
+2026-10-19 17:40:06 | INFO    | ======================================================================
+2026-10-19 17:40:06 | INFO    | Education Updates Bot Started
+2026-10-19 17:40:06 | INFO    | ======================================================================
+2026-10-19 17:40:06 | INFO    | Checking NTA
+2026-10-19 17:40:06 | INFO    | Checking YouTube Blog
+2026-10-19 17:40:06 | INFO    | Checking CBSE
+2026-10-19 17:40:06 | INFO    | Checking JoSAA
+2026-10-19 17:40:07 | INFO    | YouTube Blog -> Found 0 articles
+2026-10-19 17:40:07 | SUCCESS | YouTube Blog Completed
+2026-10-19 17:40:07 | INFO    | YouTube Blog -> New : 0
+2026-10-19 17:40:07 | INFO    | YouTube Blog -> Old : 0
+2026-10-19 17:40:07 | INFO    | CBSE -> Found 1 articles
+2026-10-19 17:40:07 | SUCCESS | CBSE Completed
+2026-10-19 17:40:07 | INFO    | CBSE -> New : 0
+2026-10-19 17:40:07 | INFO    | CBSE -> Old : 1
+2026-10-19 17:40:18 | ERROR   | [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)
+2026-10-19 17:40:18 | SUCCESS | NTA Completed
+2026-10-19 17:40:18 | INFO    | NTA -> New : 0
+2026-10-19 17:40:18 | INFO    | NTA -> Old : 0
+2026-10-19 17:41:12 | INFO    | JoSAA -> Found 7 articles
+2026-10-19 17:41:12 | SUCCESS | JoSAA Completed
+2026-10-19 17:41:12 | INFO    | JoSAA -> New : 0
+2026-10-19 17:41:12 | INFO    | JoSAA -> Old : 7
+2026-10-19 17:41:12 | SUCCESS | Completed in 65.63 seconds
+2026-10-19 17:41:12 | INFO    | ======================================================================
+2026-10-19 17:41:12 | SUCCESS | Scan Completed Successfully
+2026-10-19 17:41:12 | INFO    | Total New Articles : 0
+2026-10-19 17:41:12 | INFO    | Total Existing Articles : 8
+2026-10-19 17:41:12 | INFO    | ======================================================================
